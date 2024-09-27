@@ -62,7 +62,7 @@ cpufeatures = "0.2.6"
 fiat-crypto = { version = "0.2.1", default-features = false }
 
 [features]
-default = ["alloc", "precomputed-tables", "zeroize", "std", "u64_backend"]
+default = ["alloc", "precomputed-tables", "zeroize", "std", "u64_backend", "digest"]
 u64_backend = []
 std = ["zeroize/std"]
 alloc = ["zeroize?/alloc"]
