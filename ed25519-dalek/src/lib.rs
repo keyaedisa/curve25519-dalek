@@ -7,6 +7,8 @@
 // Authors:
 // - isis agora lovecruft <isis@patternsinthevoid.net>
 
+use sha2::Digest;
+
 //! A Rust implementation of ed25519 key generation, signing, and verification.
 //!
 //! # Example

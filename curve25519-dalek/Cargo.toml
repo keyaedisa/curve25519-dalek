@@ -4,7 +4,7 @@ name = "curve25519-dalek"
 # - update CHANGELOG
 # - update README if required by semver
 # - if README was updated, also update module documentation in src/lib.rs
-version = "3.2.1"
+version = "4.1.3"
 edition = "2021"
 rust-version = "1.60.0"
 authors = ["Isis Lovecruft <isis@patternsinthevoid.net>",
@@ -64,7 +64,7 @@ fiat-crypto = { version = "0.2.1", default-features = false }
 [features]
 default = ["alloc", "precomputed-tables", "zeroize", "std", "u64_backend", "digest"]
 u64_backend = []
-std = ["zeroize/std"]
+std = ["zeroize/std", "sha2/std"]
 alloc = ["zeroize?/alloc"]
 precomputed-tables = []
 legacy_compatibility = []
