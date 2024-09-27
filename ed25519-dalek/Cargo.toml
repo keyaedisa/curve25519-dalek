@@ -61,7 +61,8 @@ harness = false
 required-features = ["rand_core"]
 
 [features]
-default = ["fast", "std", "zeroize"]
+default = ["fast", "std", "zeroize", "u64_backend"]
+u64_backend = ["curve25519-dalek/u64_backend"]
 alloc = ["curve25519-dalek/alloc", "ed25519/alloc", "serde?/alloc", "zeroize/alloc"]
 std = ["alloc", "ed25519/std", "serde?/std", "sha2/std"]
 rand = ["rand_core", "rand_chacha"]
